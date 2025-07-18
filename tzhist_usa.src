@@ -1,0 +1,58 @@
+
+# Texas timezone history
+# compiled by Jules Descartes September 2011
+# published under Creative Commons license 
+# http://creativecommons.org/licenses/by/3.0/deed.en
+
+# Sources:
+# Doris Chase Doane, Time changes in the USA (quoted as DCD)
+# Thomas Shanks, American Atlas, various editions (quoted as Shanks)
+# Newspaper archives accessible via Internet
+# 
+
+# visual map posted to Wikimedia
+# http://commons.wikimedia.org/wiki/File:Texas_timezones.jpg
+# 
+
+# We propose three zone files
+# For the first of them, the standard tzdata definitions are fine
+# updated 2-jul-20, added azn astro zone numbers
+# updated 2-jul-20, added azn astro zone numbers
+
+# The 'Panhandle and Plains' section of Texas has CST, but had a two year
+# period of MST between 1919 and 1921. A posting to the tzdata-history mailing
+# list provides original documents:
+# http://groups.google.com/group/tzdata-history/browse_thread/thread/5e0d0d24ba438e4c
+# In short: A US goverment decision in March 1918 announced a change in time
+# zone boundaries. The CST/MST boundary was to run through Texas roughly along
+# the meridian 100w, with a bulge to the west around the towns of Sweatwater,
+# Big Springs and San Angelo, stating 1919 Jan 1 at 02 am. The local Panhandle
+# and Plains chamber of commerce was not happy in 1919 to be in another time
+# zone than the more populated south-east of the state, and they petitioned a
+# change.
+# A US congress decision of 1921 March 4 became part of the Unit States Code
+# as section 265 and moved the Panhandle and Plain area back to CST. For the
+# effective change date we follow Shanks with 1921 Mar 7. We assume that the
+# 1919 DST was observed like in the rest of the US.
+#
+# The zone is named after the largest town in the panhandle Amarillo, 101w50.
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+#Zone America/Amarillo	-6:47:20 -	LMT	1883 Nov 18 11:12:40	# azn=4940
+Zone America/Amarillo	-6:47:20 -	LMT	1883 Nov 18 18u		# azn=4940
+			-6:00	US	C%sT	1919 Jan 1  02:00
+			-7:00	US	M%sT	1921 Mar 7  02:00
+			-6:00	US	C%sT
+
+# Far western Texas (El Paso County, Hudspeth County,
+# and Pine Springs and Nickel Creek in Culberson County)
+# has MST since 1883
+Link	America/Denver	America/El_Paso	# azn=4941
+
+# The main part of Texas has always CST. Contrary to what tzdata file
+# northamerica claims, it is not like America/Chicago, as it had not DST in
+# 1936. We name it after the most populous city Houston at 95w22
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Houston	-6:21:28 -	LMT	1883 Nov 18 18u	# azn=4942
+			-6:00	US	C%sT
+
+
