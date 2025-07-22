@@ -1,0 +1,10 @@
+#!/bin/bash
+# compile zones including local zones maintained by Alois Treindl
+# update 22-jul-25
+PZONES="tzhist_world.txt tzhist_usa.txt tzhist_canada.txt "
+touch backzone africa antarctica asia australasia europe northamerica southamerica $PZONES
+PACKRATDATA="backzone $PZONES"
+echo $PACKRATDATA
+export CC='gcc -std=gnu11' 
+make  PACKRATDATA="$PACKRATDATA" zones
+make zdump
