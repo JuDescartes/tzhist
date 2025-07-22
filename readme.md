@@ -33,13 +33,14 @@ and published their work.
   - *Time Changes in the U.S.A* (1966, revised 1980),
   - *Time Changes in Canada and Mexico* (1968, revised 1986), 
   - *Time Changes in the World* (1971, revised 1982).
-- two books by Thomas Shanks published by Astro Communications Inc., an important source for the irregular use of daylight saving time in various Canadian and US states before its national standardization.
-  - *The American Atlas* (1996),
+- books by Thomas Shanks published by Astro Communications Inc., an important source for the irregular use of daylight saving time in various Canadian and US states before its national standardization.
+  - *The American Atlas*, 5th edition (1999),
   - *The International Atlas*, 6th edition (2006),
 
 - *Traité de l'heure dans le monde*, by Gabriel (1990),
 - *Régimes Horaires pour l'Europe et l'Afrique*, by Henri Le Corré (1982), 
 - *L'astrologie confrontée aux régimes des zones occupied en France de 1914 à 1945*, Guy Mayeres (2006),
 - *Новый справочник астролога. Координаты городов и временные поправки (A new astrologer's reference*
-*book. Coordinates of cities and time corrections)*, Zaitsev A., Kutalev D. (2015), and others.
+*book. Coordinates of cities and time corrections)*, Zaitsev A., Kutalev D. (2015),
+- and other books or data inside books.
 - Research and data collection by Alois Treindl since the founding of Astrodienst in 1980, some of which have also been included in the public TZ database. The most important primary sources for research are newspaper archives, old airport data, and train timetables.
