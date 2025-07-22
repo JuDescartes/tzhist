@@ -55,3 +55,24 @@ and unpack it into a directory, for example /home/tz.
 
 - run the command: ./mk_zones.public
 It will compile all the TZ source files and the extra tzhist files and install the binary files.
+
+### What is missing
+Boundary definitions for all the zones are missing. While they exist to some extent for the official TZ zones,
+no boundary lines have yet been defined for the non-official zones from the tzhist files.
+
+Alternatively, instead of boundary lines you could use lists of place names with coordinates and the zone name
+to be used with each place. Again, such lists exist in the Geonames project, but only with references to the official TZ
+zones, not to the extra zones defined in the tzhist files.
+
+Astrodienst has also defined a system of 'Astrodienst Zone Numbers' (AZN) with a distinct number for each zone.
+That simplifies the maintenance of such places lists, because official zone names sometimes change.
+
+### Where tzhist is incomplete
+Canadian states: NS Nova Scotia(25), ON Ontario(100), PE Prince Edward Island(3), QU Quebec(60), SK Saskatchewan(40).
+
+US states: AK(8), AL(7), AZ(3), CO(3), CT(5), DC(1), DE(20), GA(20), IA(25), ID(20), IL(110), IN(300),
+KS(5), KY(70), LA(2), MD(30), ME(50), MI(100), MO(5), MO(40), MS(2), MT(10), NC(5), ND(10), NE(5),
+NH(15), NJ(15), NM(2), NY(200), OH(100), OK(3), OR(15), PA(120), RI(1), SC(1), SD(3), TN(70), UT(2),
+VA(25), VT(50), WA(50), WI(5), WV (1)(30), WY (1).
+
+The number in (parenthesis) indicates how many zones are approximately required for each state.
