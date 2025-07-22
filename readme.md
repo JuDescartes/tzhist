@@ -26,7 +26,7 @@ and published their work.
 
 ### The current and historical information on time zones and daylight saving times comes from
 - the public domain database TZ, see <a href="https://en.wikipedia.org/wiki/Tz_database">Wikipedia TZ Database</a>, especially for data from 1970 onwards.
-- the public <a href="https://lists.iana.org/hyperkitty/list/tz@iana.org/latest">Mailing List Archive</a>, going back to 1986.
+- the public <a href="https://lists.iana.org/hyperkitty/list/tz@iana.org/latest">TZ Mailing List Archive</a>, going back to 1986.
 - reference books by American astrologer Doris Chase Doane
   - *Time Changes in the U.S.A* (1966, revised 1980),
   - *Time Changes in Canada and Mexico* (1968, revised 1986), 
