@@ -1,4 +1,6 @@
-readme.md	created 5-sep-2018 by Jules Descartes
+readme.md	
+
+created 5-sep-2018
 
 last update 22-jul-25
 
