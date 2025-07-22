@@ -44,3 +44,14 @@ and published their work.
 *book. Coordinates of cities and time corrections)*, Zaitsev A., Kutalev D. (2015),
 - and other books or data inside books.
 - Research and data collection by Alois Treindl since the founding of Astrodienst in 1980, some of which have also been included in the public TZ database. The most important primary sources for research are newspaper archives, old airport data, and train timetables.
+
+### How to use
+- You should download the latest TZ code and data release from https://www.iana.org/time-zones 
+and unpack it into a directory, for example /home/tz.
+
+- Download the files with suffix .txt and the shell script mk_zones.public into the same directory.
+
+- Make sure to have write permission in directory /usr/share/zoneinfo and all its content.
+
+- run the command: ./mk_zones.public
+It will compile all the TZ source files and the extra tzhist files and install the binary files.

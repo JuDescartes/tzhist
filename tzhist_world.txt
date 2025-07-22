@@ -2821,7 +2821,7 @@ Zone Africa/South_Africa/Durban 2:04:11 -	LMT	1881    	# azn=1009
 				#
 				# Marion and Prince Edward Is
 				# scientific station since 1947
-				# no information
+
 
 Zone Africa/South_Africa/Bloemfontein 1:44:52 -	LMT	1881    	# azn=1009
 				1:44:52	-	BMT	1892 Feb 8	# Meridian m26e13
@@ -2832,7 +2832,7 @@ Zone Africa/South_Africa/Bloemfontein 1:44:52 -	LMT	1881    	# azn=1009
 				#
 				# Marion and Prince Edward Is
 				# scientific station since 1947
-				# no information
+
 
 # Zaire / Congo 
 Zone Africa/Kisangani	1:40:48 -	LMT	1897 Nov 9		# azn=1162
@@ -2939,7 +2939,7 @@ Zone	Asia/India/Mumbai 4:51:20 -	LMT	1880  # 		azn=1261
 			# Since 1970 the following are like Asia/Kolkata:
 			#	Andaman Is
 			#	Lakshadweep (Laccadive, Minicoy and Amindivi Is)
-			#	Nicobar Is
+
 
 # Jahrkhand, Bihar, was part of Bengal under Raj, follows mostly Kolkata
 Zone	Asia/India/Patna 5:40:28 -	LMT	1854 Jun 28 # 		azn=1262
@@ -2958,7 +2958,7 @@ Zone	Asia/India/Patna 5:40:28 -	LMT	1854 Jun 28 # 		azn=1262
 			# Since 1970 the following are like Asia/Kolkata:
 			#	Andaman Is
 			#	Lakshadweep (Laccadive, Minicoy and Amindivi Is)
-			#	Nicobar Is
+
 
 # Assam, Nagaland, Manipur, Tripura
 # Shanks has LMT until 1941, which is false, Follow Gabriel.
@@ -2977,7 +2977,7 @@ Zone	Asia/India/Imphal 6:15:48 -	LMT	1890 		 # 		azn=1263
 			# Since 1970 the following are like Asia/Kolkata:
 			#	Andaman Is
 			#	Lakshadweep (Laccadive, Minicoy and Amindivi Is)
-			#	Nicobar Is
+
 
 # Goa
 Zone	Asia/India/Vasco_da_Gama 4:55:20 -	LMT	1911 Jul 18  # 		azn=1264
@@ -2994,7 +2994,7 @@ Zone	Asia/India/Vasco_da_Gama 4:55:20 -	LMT	1911 Jul 18  # 		azn=1264
 			# Since 1970 the following are like Asia/Kolkata:
 			#	Andaman Is
 			#	Lakshadweep (Laccadive, Minicoy and Amindivi Is)
-			#	Nicobar Is
+
 
 # Indonesia
 
@@ -3058,7 +3058,7 @@ Zone Asia/Indonesia/Surabaya	7:31	 -	LMT	1867 Aug 10	# azn=1271
 				8:00	-	%z	1950 May
 				7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # Island north of Java
 Zone Asia/Indonesia/Bawean	7:30:40 -	LMT	1932 Nov	# azn=1272
@@ -3076,7 +3076,7 @@ Zone Asia/Indonesia/Bawean	7:30:40 -	LMT	1932 Nov	# azn=1272
 				8:00	-	%z	1950 May
 				7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 
 # Most of Aceh in north of Sumatra
@@ -3099,7 +3099,7 @@ Zone Asia/Indonesia/Banda_Aceh	6:41:24 -	LMT	1918 Apr	# azn=1273
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # South tip of Sumatra, Lampung
 Zone Asia/Indonesia/Bandar_Lampung 7:01:04 -	LMT	1918 Apr	# azn=1274
@@ -3119,7 +3119,7 @@ Zone Asia/Indonesia/Bandar_Lampung 7:01:04 -	LMT	1918 Apr	# azn=1274
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # Sumatra, Pamlembang
 Zone Asia/Indonesia/Palembang   6:59	-	LMT	1918 Apr	# azn=1275
@@ -3139,7 +3139,7 @@ Zone Asia/Indonesia/Palembang   6:59	-	LMT	1918 Apr	# azn=1275
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # Sumatra, Riau, Jambi, largest town Pekanbaru population 950k
 Zone Asia/Indonesia/Pekanbaru   6:45:45	-	LMT	1918 Apr	# azn=1276
@@ -3160,7 +3160,7 @@ Zone Asia/Indonesia/Pekanbaru   6:45:45	-	LMT	1918 Apr	# azn=1276
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 
 # North-Sumatra, central and east part, capital Medan population 2 Mill
@@ -3183,7 +3183,7 @@ Zone Asia/Indonesia/Medan	6:34:40 -	LMT	1918 Apr	# azn=1277
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 
 # islands south of Singapur, largest town Batam population 1.3 Mill
@@ -3203,7 +3203,7 @@ Zone Asia/Indonesia/Batam 06:56:12 -	LMT	1932 Nov	# azn=1278
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # Pagai north and south island
 Zone Asia/Indonesia/Pagai	6:41:20 -	LMT	1932 Nov	# azn=1279
@@ -3224,7 +3224,7 @@ Zone Asia/Indonesia/Pagai	6:41:20 -	LMT	1932 Nov	# azn=1279
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # islands Nias and Siberut
 Zone Asia/Indonesia/Nias	6:30:28 -	LMT	1932 Nov	# azn=1280
@@ -3245,7 +3245,7 @@ Zone Asia/Indonesia/Nias	6:30:28 -	LMT	1932 Nov	# azn=1280
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # Bangka and Belitung islands
 Zone Asia/Indonesia/Bangka_Belitung 7:04:28 -	LMT	1932 Nov	# azn=1278
@@ -3264,7 +3264,7 @@ Zone Asia/Indonesia/Bangka_Belitung 7:04:28 -	LMT	1932 Nov	# azn=1278
 				#! 8:00	-	%z	1950 May
 				#! 7:30	-	%z	1964
 				7:00	-	WIB
-				# west and central Borneo
+
 
 # central Sulawesi island
 Zone Asia/Indonesia/Palu	7:59:32 -	LMT	1920		# azn=1286
@@ -3277,7 +3277,7 @@ Zone Asia/Indonesia/Palu	7:59:32 -	LMT	1920		# azn=1286
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # North Sulawesi island
 Zone Asia/Indonesia/Manado	8:19:24 -	LMT	1920		# azn=1287
@@ -3290,7 +3290,7 @@ Zone Asia/Indonesia/Manado	8:19:24 -	LMT	1920		# azn=1287
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # Sangir island
 Zone Asia/Indonesia/Sangir      8:21:56 -	LMT	1932 Nov	# azn=1288
@@ -3303,7 +3303,7 @@ Zone Asia/Indonesia/Sangir      8:21:56 -	LMT	1932 Nov	# azn=1288
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # West and East Nusa Tenggara Sumbawa, Sumba, Flores, without Lombok
 Zone Asia/Indonesia/Bima	7:54:52 -	LMT	1932 Nov	# azn=1289
@@ -3315,7 +3315,7 @@ Zone Asia/Indonesia/Bima	7:54:52 -	LMT	1932 Nov	# azn=1289
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # West Timor and nearny islands
 Zone Asia/Indonesia/Kupang	8:14:20 -	LMT	1932 Nov	# azn=1290
@@ -3329,7 +3329,7 @@ Zone Asia/Indonesia/Kupang	8:14:20 -	LMT	1932 Nov	# azn=1290
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # Bali and Lombok
 Zone Asia/Indonesia/Denpasar	7:40:52 -	LMT	1932 Nov	# azn=1291
@@ -3344,7 +3344,7 @@ Zone Asia/Indonesia/Denpasar	7:40:52 -	LMT	1932 Nov	# azn=1291
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # central Borneo, like west Borneo, Asia/Pontianak
 Zone Asia/Indonesia/Palangka_Raya 7:48:36 -	LMT	1908 May	# azn=1293
@@ -3362,7 +3362,7 @@ Zone Asia/Indonesia/Palangka_Raya 7:48:36 -	LMT	1908 May	# azn=1293
 				7:30	-	%z	1964
 				8:00	-	WITA	1988 Jan  1
 				7:00	-	WIB
-				# Sulawesi, Lesser Sundas, east and south Borneo
+
 
 # east Borneo, different from Asia/Pontianak
 Zone Asia/Indonesia/Samarinda	7:48:36 -	LMT	1908 May	# azn=1294
@@ -3378,7 +3378,7 @@ Zone Asia/Indonesia/Samarinda	7:48:36 -	LMT	1908 May	# azn=1294
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # south-east Borneo, 
 Zone Asia/Indonesia/Balikpapan	7:47:20 -	LMT	1908 May	# azn=1295
@@ -3394,7 +3394,7 @@ Zone Asia/Indonesia/Balikpapan	7:47:20 -	LMT	1908 May	# azn=1295
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # Kalimantan Selantan, part of Kalimantan Timur
 Zone Asia/Indonesia/Banjarmasin 7:38:20 -	LMT	1908 May	# azn=1293
@@ -3410,7 +3410,7 @@ Zone Asia/Indonesia/Banjarmasin 7:38:20 -	LMT	1908 May	# azn=1293
 				#! 8:00	-	%z	1942 Feb  9
 				#! 9:00	-	%z	1945 Sep 23
 				8:00	-	WITA
-				# Maluku Islands, West Papua, Papua
+
 
 # Biak and Japen/Yapen islands north of Papua
 # Timezone was 9he anyway, so Japaness occupation between 1942 and 1944
@@ -3517,7 +3517,7 @@ Zone	Asia/Miyakojima	8:21:08 -	LMT	1896 #  azn=1341
 			9:00	Japan	J%sT
 			# Since 1938, all Japanese possessions have been like Asia/Tokyo,
 			# except that Truk (Chuuk), Ponape (Pohnpei), and Jaluit (Kosrae) did not
-			# switch from +10 to +09 until 1941-04-01; see the 'australasia' file.
+
 
 # part of Kazachstan
 Zone	Asia/Derzavinsk	4:25:16 -	LMT	1924 May  2 # azn=1353
@@ -3531,7 +3531,7 @@ Zone	Asia/Derzavinsk	4:25:16 -	LMT	1924 May  2 # azn=1353
 			6:00 RussiaAsia	%z	2004 Oct 31  2:00s
 			6:00	-	%z	2024 Mar  1  0:00
 			5:00	-	%z
-			# Qyzylorda (aka Kyzylorda, Kizilorda, Kzyl-Orda, etc.) (KZ-43)
+
 
 # Malaysia Labuan island
 Zone	Asia/Labuan	7:40:52 -	LMT	1904 #  azn=1388
@@ -3581,7 +3581,7 @@ Zone Pacific/Papua/Lae 9:48	-	LMT	1880
 			# on 2014-12-28 at 02:00.  They call +11 "Bougainville Standard Time".
 			# See:
 			# http://www.bougainville24.com/bougainville-issues/bougainville-gets-own-timezone/
-			#
+
 
 # Rabaul town on east end of New Britain island, last liberated in 1945
 Zone Pacific/Papua/Rabaul 10:08:48 -	LMT	1880
@@ -3609,7 +3609,7 @@ Zone Pacific/Papua/Rabaul 10:08:48 -	LMT	1880
 			# on 2014-12-28 at 02:00.  They call +11 "Bougainville Standard Time".
 			# See:
 			# http://www.bougainville24.com/bougainville-issues/bougainville-gets-own-timezone/
-			#
+
 
 # New Britain, New Ireland and Bougainville island,
 # Bougainvill might differ, as it was German from 1886 to 1918, but we have no
@@ -3639,7 +3639,7 @@ Zone Pacific/Papua/Arawa 10:22:16 -	LMT	1880
 			# on 2014-12-28 at 02:00.  They call +11 "Bougainville Standard Time".
 			# See:
 			# http://www.bougainville24.com/bougainville-issues/bougainville-gets-own-timezone/
-			#
+
 
 
 
@@ -3747,7 +3747,7 @@ Zone America/Mexico/Veracruz	-6:24:24 -	LMT	1922 Jan  1  23:00	# azn=1725
 				# Chihuahua (near US border - western side)
 				# This includes the municipios of Janos, Ascensión, Juárez, Guadalupe, and
 				# Práxedis G Guerrero.
-				# http://gaceta.diputados.gob.mx/PDF/65/2a022/nov/20221124-VII.pdf
+
 
 # state Aguascalientes
 Zone America/Mexico/Aguascalientes  -6:49:12 -	LMT	1922 Jan  1 23:00	# azn=1726
@@ -3766,7 +3766,7 @@ Zone America/Mexico/Aguascalientes  -6:49:12 -	LMT	1922 Jan  1 23:00	# azn=1726
 				    	# Chihuahua (near US border - western side)
 				    	# This includes the municipios of Janos, Ascensión, Juárez, Guadalupe, and
 				    	# Práxedis G Guerrero.
-				    	# http://gaceta.diputados.gob.mx/PDF/65/2a022/nov/20221124-VII.pdf
+
 
 # states Puebla, Jalisco, Guerrero, Colima, Michoacan, Guanajuato, San Luis Potosi,
 # Hidalgo, Zacatecas
@@ -3789,7 +3789,7 @@ Zone America/Mexico/Leon  	    -6:46:40 -	LMT	1922 Jan  1 23:00	# azn=1727
 				    	# Chihuahua (near US border - western side)
 				    	# This includes the municipios of Janos, Ascensión, Juárez, Guadalupe, and
 				    	# Práxedis G Guerrero.
-				    	# http://gaceta.diputados.gob.mx/PDF/65/2a022/nov/20221124-VII.pdf
+
 
 # Baja California Sur
 Zone America/Mexico/La_Paz	 -7:21:12    -	LMT	1921 Dec 31 23:54:20	# azn=1729
@@ -3863,7 +3863,7 @@ Zone America/Mexico/Ensenada	 -7:46:28    -	LMT	1921 Dec 31 23:54:20	# azn=1732
 				    	#
 				    	#
 				    	# Revillagigedo Is
-				    	# no information
+
 
 # Coahuila border zone
 Zone America/Mexico/Piedras_Negras  -6:42:04	-	LMT	1921 Dec 31 23:20:00	# azn=1734
@@ -3878,7 +3878,7 @@ Zone America/Mexico/Piedras_Negras  -6:42:04	-	LMT	1921 Dec 31 23:20:00	# azn=17
 					-6:00	US	C%sT	1989
 					-6:00	Mexico	C%sT	2010
 					-6:00	US	C%sT
-					# Durango; Coahuila, Nuevo León, Tamaulipas (away from US border)
+
 
 # Durango and Nueva Leon, largest town Monterrey Nueva Leon
 # zone America/Monterrey is good for Tamaulipas, but before 1932 not for Monterrey
@@ -3898,7 +3898,7 @@ Zone America/Mexico/Monterrey       -6:41:16	-	LMT	1921 Dec 31 23:18:44
 					-6:00	-	CST	1988
 					-6:00	US	C%sT	1989
 					-6:00	Mexico	C%sT
-					# Central Mexico
+
 
 # Argentina
 # need extra zones based on research by Alejandra Eusebi (email 11-nov-23)
