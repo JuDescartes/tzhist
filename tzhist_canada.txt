@@ -1,0 +1,680 @@
+#########################
+# Canada 
+#########################
+# details from Chase Doane and Shanks, checked to some extent via newspaper archive
+# research. 
+
+# Alberta
+
+# most of the state. 
+# America/Edmonton is only a small area around the state capital
+Zone America/Alberta/Red_Deer   -07:35:12 -	LMT     1906 Sep	# azn=2001
+				  -7:00   Edm	M%sT    1920	# did not follow 1920 and 1921 DST
+				  -7:00   -	MST	1942
+				  -7:00   Edm	M%sT	1947	# did not follow 1947 DST
+				  -7:00   -	MST	1948
+				  ## 0	follow America/Edmonton
+				  #! -7:33:52 -	LMT	1906 Sep
+				  -7:00	Edm	M%sT	1987
+				  -7:00	Canada	M%sT
+
+# small area around Calgary
+Zone America/Alberta/Calgary   -07:36:20 -      LMT     1906 Sep	# azn=2002
+				-7:00   Edm     M%sT    1920	# did not follow 1920 and 1921 DST
+				-7:00   -	MST	1942
+				-7:00   Edm	M%sT	1946 May 15 2:00
+				-7:00   1:00	MDT	1946 Oct 5 2:00	# has 1946 DST, which Edm did not
+				## 0	follow America/Edmonton
+				#! -7:33:52 -	LMT	1906 Sep
+				-7:00	Edm	M%sT	1987
+				-7:00	Canada	M%sT
+
+# small area in south-east
+Zone America/Alberta/Medicine_Hat -07:22:40 -	LMT     1906 Sep	# azn=2003
+				-7:00   Edm     M%sT    1920	# did not follow 1920 and 1921 DST
+				-7:00   -	MST	1942
+				## 0	follow America/Edmonton
+				#! -7:33:52 -	LMT	1906 Sep
+				-7:00	Edm	M%sT	1987
+				-7:00	Canada	M%sT
+
+# town at border of Saskatchewan, incorporated in both states
+Zone America/Alberta/Lloydminster -07:20 -      LMT     1906 Sep	# azn=2004
+				-7:00   Edm     M%sT    1920	# did not follow 1920 and 1921 DST
+				-7:00   -	MST	1942
+				-7:00   Edm	M%sT	1946	# did not follow 1947 DST
+				-7:00   -	MST	1948	
+				-7:00   Regina	M%sT	1949	
+				-7:00   -	MST	1957 Apr 28 2:00
+				-7:00   1:00	MDT	1957 Oct 27 2:00
+				## 0	follow America/Edmonton
+				#! -7:33:52 -	LMT	1906 Sep
+				-7:00	Edm	M%sT	1987
+				-7:00	Canada	M%sT
+
+# British Columbia
+
+# Vancouver island, south end around Victoria
+Zone America/British_Columbia/Victoria	-8:13:28 -	LMT	1884	# azn=2011
+			-8:00	Vanc	P%sT	1921 May
+			-8:00	1:00	PDT	1921 Oct
+			-8:00	-	PST	1922 Apr 30
+			-8:00	1:00	PDT	1922 Sep 5
+			-8:00	-	PST	1923 May 6
+			-8:00	1:00	PDT	1923 Sep 9
+			-8:00	Vanc	P%sT	1987
+			-8:00	Canada	P%sT
+
+# main part of state, Abbotsford is largest town outside Vancouver area
+Zone America/British_Columbia/Abbotsford -8:09:08 -	LMT	1884	# azn=2012
+			-8:00	Vanc	P%sT	1946 
+			-8:00	-	PST	1947 	# no DST in 1946
+			-8:00	Vanc	P%sT	1987
+			-8:00	Canada	P%sT
+
+# East Kootenay region near Alberta border, same as Alberta/Red_Deer	# azn=2013
+# do not create an extra zone for it. Largest town Cranbrook.
+
+# Manitoba 
+
+Rule	MB	1963	only	-	May 12		2:00	1:00	D
+Rule	MB	1963	only	-	Sep 7		2:00	0	S
+Rule	MB	1964	1967	-	Apr lastSun	2:00	1:00	D
+Rule	MB	1964	1967	-	Sep Sun>=7	2:00	0	S
+
+# most of state outside metropolitan area aof Winnipeg
+Zone America/Manitoba/Steinbach	-6:26:44 -	LMT	1887 Jul 16	# azn=2031
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# town 46 km east of Winnipeg
+Zone America/Manitoba/Beausejour -6:26:12 -	LMT	1887 Jul 16	# azn=2032
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1949
+				-6:00	Winn	C%sT	1950 Apr 30 2:00
+				-6:00	1:00	CDT	1950 Sep 24 2:00
+				-6:00	-	CST	1951
+				-6:00	Winn	C%sT	1952
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# town near US border
+Zone America/Manitoba/Boissevain -6:40:12 -	LMT	1887 Jul 16	# azn=2033
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1948
+				-6:00	Winn	C%sT	1949
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# second largest town of Manitoba, 214 km west of Winnipeg
+Zone America/Manitoba/Brandon -6:39:48 -	LMT	1887 Jul 16	# azn=2034
+				-6:00	-	CST	1916 Apr 17
+				-6:00	1:00	CWT	1916 Jun 19
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946 Apr 28 2:00
+				-6:00	1:00	CDT	1946 Sep 29 2:00
+				-6:00	-	CST	1963 Jun  1 2:00
+				-6:00	1:00	CDT	1963 Sep  1 2:00
+				-6:00	-	CST	1964 
+				-6:00	MB	C%sT	1966 
+				-6:00	-	CST	1966 Apr 30 2:00
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# 
+Zone America/Manitoba/Dauphin -6:40:12 -	LMT	1887 Jul 16	# azn=2035
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1947
+				-6:00	Winn	C%sT	1947 Aug
+				-6:00	1:00	CDT	1947 Aug 31 2:00
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# town pair Flin Flon, MB and Creighton, SK on north west border
+Zone America/Manitoba/Flin_Flon -6:47:32 -	LMT	1887 Jul 16	# azn=2036
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1947
+				-6:00	Winn	C%sT	1949
+				-6:00	-	CST	1949 Jul  3 2:00
+				-6:00	1:00	CDT	1949 Sep 25 2:00
+				-6:00	-	CST	1950 Jul  2 2:00
+				-6:00	1:00	CDT	1950 Sep 30 2:00
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# town Gimli
+Zone America/Manitoba/Gimli    -6:27:56 -	LMT	1887 Jul 16	# azn=2037
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1949 Apr 24 2:00
+				-6:00	1:00	CDT	1949 Sep 25 2:00
+				-6:00	-	CST	1955 
+				-6:00	Winn	C%sT	1956
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# towns Grand beach, Victoria Beach
+Zone America/Manitoba/Grand_Beach -6:26:40 -	LMT	1887 Jul 16	# azn=2038
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1952
+				-6:00	Winn	C%sT	1956
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# towns Pinawa, Great Falls
+Zone America/Manitoba/Pinawa -6:23:32 -	LMT	1887 Jul 16	# azn=2039
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1937
+				-6:00	Winn	C%sT	1952
+				-6:00	-	CST	1953
+				-6:00	Winn	C%sT	1956
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+
+# 
+Zone America/Manitoba/Portage_la_Praerie -6:33:12 -	LMT	1887 Jul 16	# azn=2040
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946 Apr 28 2:00
+				-6:00	1:00	CDT	1946 Aug 15 2:00
+				-6:00	-	CST	1947 Apr 27 2:00 
+				-6:00	1:00	CDT	1947 Aug 17 2:00
+				-6:00	-	CST	1956 
+				-6:00	Winn	C%sT	1957
+				-6:00	-	CST	1961 Apr 30 2:00 
+				-6:00	1:00	CDT	1961 Sep 24 2:00
+				-6:00	-	CST	1962 Apr 29 2:00 
+				-6:00	1:00	CDT	1962 Oct 28 2:00
+				-6:00	Winn	C%sT	1964
+				-6:00	-	CST	1966
+				-6:00	MB	C%sT	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# 
+Zone America/Manitoba/Rennie -6:22:12 -	LMT	1887 Jul 16	# azn=2041
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1946
+				-6:00	-	CST	1949
+				-6:00	Winn	C%sT	1950
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# 
+Zone America/Manitoba/Warren	-6:30:12 -	LMT	1887 Jul 16	# azn=2042
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1942
+				-6:00	Winn	C%sT	1949
+				-6:00	-	CST	1950 
+				-6:00	Winn	C%sT	1959
+				-6:00	-	CST	1963 
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# 
+Zone America/Manitoba/Winnipeg_Beach -6:27:52 -	LMT	1887 Jul 16	# azn=2043
+				-6:00	-	CST	1918
+				-6:00	Winn	C%sT	1919
+				-6:00	-	CST	1937
+				-6:00	Winn	C%sT	1946 Apr 28 2:00
+				-6:00	1:00	CDT	1946 Sep 29 2:00
+				-6:00	-	CST	1948
+				-6:00	Winn	C%sT	1956
+				-6:00	-	CST	1963 
+				-6:00	MB	C%sT	1966
+				-6:00	-	CST	1967
+				## 0	follow	America/Winnipeg
+				#! -6:28:36 -	LMT	1887 Jul 16
+				-6:00	Winn	C%sT	2006
+				-6:00	Canada	C%sT
+
+# state New Brunswick
+# 
+# # Rule	NAME	FROM	TO	-	IN	ON	AT	SAVE	LETTER/S
+# Rule	Moncton	1933	1935	-	Jun	Sun>=8	1:00	1:00	D
+# Rule	Moncton	1933	1935	-	Sep	Sun>=8	1:00	0	S
+# Rule	Moncton	1936	1938	-	Jun	Sun>=1	1:00	1:00	D
+# Rule	Moncton	1936	1938	-	Sep	Sun>=1	1:00	0	S
+# Rule	Moncton	1939	only	-	May	27	1:00	1:00	D
+# Rule	Moncton	1939	1941	-	Sep	Sat>=21	1:00	0	S
+# Rule	Moncton	1940	only	-	May	19	1:00	1:00	D
+# Rule	Moncton	1941	only	-	May	 4	1:00	1:00	D
+# Rule	Moncton	1946	1972	-	Apr	lastSun	2:00	1:00	D
+# Rule	Moncton	1946	1956	-	Sep	lastSun	2:00	0	S
+# Rule	Moncton	1957	1972	-	Oct	lastSun	2:00	0	S
+# Rule	Moncton	1993	2006	-	Apr	Sun>=1	0:01	1:00	D
+# Rule	Moncton	1993	2006	-	Oct	lastSun	0:01	0	S
+# # Zone	NAME		STDOFF	RULES	FORMAT	[UNTIL]
+# Zone America/Moncton	-4:19:08 -	LMT	1883 Dec  9	# azn=2050
+# 			-5:00	-	EST	1902 Jun 15
+# 			-4:00	Canada	A%sT	1933
+# 			-4:00	Moncton	A%sT	1942
+# 			-4:00	Canada	A%sT	1946
+# 			-4:00	Moncton	A%sT	1973
+# 			-4:00	Canada	A%sT	1993
+# 			-4:00	Moncton	A%sT	2007
+# 			-4:00	Canada	A%sT
+
+Rule	NeBr	1934	only	-	Apr 29		2:00	1:00	D
+Rule	NeBr	1934	only	-	Sep 30		2:00	0	S
+Rule	NeBr	1946	only	-	Apr 1		2:00	1:00	D
+Rule	NeBr	1946	only	-	Sep 28		2:00	0	S
+Rule	NeBr	1950	only	-	May 15		2:00	1:00	D
+Rule	NeBr	1950	only	-	Oct  2		2:00	0	S
+Rule	NeBr	1961	only	-	May  1		2:00	1:00	D
+Rule	NeBr	1961	only	-	Oct  2		2:00	0	S
+
+Zone America/New_Brunswick/Edmundston -4:33:20	-	LMT	1883 Dec  9	# azn=2051
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Bathurst  -4:22:36	-	LMT	1883 Dec  9	# azn=2052
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1934
+		 			-4:00	NeBr	A%sT	1942
+ 					-4:00	Canada	A%sT	1946 
+		 			-4:00	NeBr	A%sT	1948
+		 			-4:00	Moncton	A%sT	1949
+		 			-4:00	NeBr	A%sT	1951
+		 			-4:00	Moncton	A%sT	1955
+ 					-4:00	-	AST	1956
+		 			-4:00	Moncton	A%sT	1957 Sep 30 2:00
+ 					-4:00	NeBr	A%sT	1964
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Campbellton -4:26:40	-	LMT	1883 Dec  9	# azn=2053
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1949
+ 					-4:00	Moncton	A%sT	1957 Sep 1  2:00
+ 					-4:00	-	AST	1958
+ 					-4:00	Moncton	A%sT	1958 Aug 31 2:00
+ 					-4:00	-	AST	1959
+ 					-4:00	Moncton	A%sT	1959 Sep 27 2:00
+ 					-4:00	-	AST	1961 Jun 18 2:00
+ 					-4:00	1:00	ADT	1961 Sep  5 2:00
+ 					-4:00	-	AST	1964 May 17 2:00
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Miramichi	-4:22	-	LMT	1883 Dec  9	# azn=2054
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1951
+		 			-4:00	Moncton	A%sT	1954
+ 					-4:00	-	AST	1956
+		 			-4:00	Moncton	A%sT	1957 Sep 30 2:00
+ 					-4:00	Canada	A%sT	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Dalhousie -4:25:32	-	LMT	1883 Dec  9	# azn=2055
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1953
+ 					-4:00	-	AST	1953 Apr 26 2:00
+ 					-4:00	1:00	ADT	1953 Sep 28 2:00
+ 					-4:00	-	AST	1957 Apr 27 2:00
+ 					-4:00	1:00	ADT	1957 Sep 29 2:00
+ 					-4:00	-	AST	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Fredericton -4:26:36	-	LMT	1883 Dec  9	# azn=2056
+		 			-5:00	-	EST	1902 Jun 15
+		 			-4:00	Canada	A%sT	1946
+ 					-4:00	-	AST	1946 Apr 28 2:00
+ 					-4:00	1:00	ADT	1946 Sep 29 2:00
+ 					-4:00	-	AST	1948
+		 			-4:00	Moncton	A%sT	1957 Sep 29 2:00
+ 					-4:00	-	AST	1958
+		 			-4:00	Moncton	A%sT	1958 Sep 27 2:00
+ 					-4:00	-	AST	1959
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Hampton   -4:23:24	-	LMT	1883 Dec  9	# azn=2057
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1953 Apr 26 2:00
+ 					-4:00	1:00	ADT	1953 Sep 28 2:00
+ 					-4:00	Canada	A%sT	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/MacAdam -4:33:20	-	LMT	1883 Dec  9	# azn=2058
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1954
+		 			-4:00	Moncton	A%sT	1956
+ 					-4:00	-	AST	1959
+		 			-4:00	Moncton	A%sT	1960 Sep 26 2:00
+ 					-4:00	-	AST	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Newcastle -4:22:16	-	LMT	1883 Dec  9	# azn=2059
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1946
+ 					-4:00	-	AST	1948
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Rule	Sjon	1924	only	-	May 19		0	1:00	D
+Rule	Sjon	1924	only	-	Sep  8		0	0	S
+Rule	Sjon	1925	1927	-	May Mon>=1	0	1:00	D
+Rule	Sjon	1925	only	-	Sep 28		0	0	S
+Rule	Sjon	1926	only	-	Sep  8		0	0	S
+Rule	Sjon	1927	only	-	Sep 26		0	0	S
+Rule	Sjon	1928	only	-	May 21		0	1:00	D
+Rule	Sjon	1928	1930	-	Sep Wed>=1	0	0	S
+Rule	Sjon	1929	only	-	May 13		0	1:00	D
+Rule	Sjon	1930	only	-	Jun  2		0	1:00	D
+Rule	Sjon	1931	only	-	May 18		0	1:00	D
+Rule	Sjon	1931	only	-	Sep 14		0	0	S
+Rule	Sjon	1932	only	-	May 29		0	1:00	D
+Rule	Sjon	1933	1938	-	May Sun>=22	0	1:00	D
+Rule	Sjon	1939	only	-	May 21		0	1:00	D
+Rule	Sjon	1940	1941	-	May Sun>=22	0	1:00	D
+Rule	Sjon	1932	only	-	Sep 24		24:00	0	S
+Rule	Sjon	1933	only	-	Sep 30		24:00	0	S
+Rule	Sjon	1934	1940	-	Sep Sat>=23	24:00	0	S
+Rule	Sjon	1941	only	-	Sep 27		1:00	0	S
+
+Zone America/New_Brunswick/Saint_John -4:24:12	-	LMT	1883 Dec  9	# azn=2060
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1924
+ 					-4:00	Sjon	A%sT	1942
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					-4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Saint_Stephen -4:29:08	-	LMT	1883 Dec  9	# azn=2061
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1958
+ 					-4:00	Moncton	A%sT	1960
+ 					-4:00	Canada	A%sT	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Shediac -4:18:08	-	LMT	1883 Dec  9	# azn=2062
+		 			-5:00	-	EST	1902 Jun 15
+		 			-4:00	Canada	A%sT	1940 Apr 28 2:00
+ 					-4:00	1:00	ADT	1940 Sep  1 2:00
+		 			-4:00	Canada	A%sT	1946
+ 					-4:00	-	AST	1946 Apr 28 2:00
+ 					-4:00	1:00	ADT	1946 Sep 29 2:00
+		 			-4:00	Moncton	A%sT	1952
+ 					-4:00	-	AST	1953
+		 			-4:00	Moncton	A%sT	1954 Sep 26 2:00
+ 					-4:00	-	AST	1958 Apr 27 2:00
+ 					-4:00	1:00	ADT	1958 Oct 26 2:00
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Sussex -4:22:04	-	LMT	1883 Dec  9	# azn=2063
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1946
+		 			-4:00	Moncton	A%sT	1947
+ 					-4:00	-	AST	1948
+		 			-4:00	Moncton	A%sT	1950
+ 					-4:00	-	AST	1951
+		 			-4:00	Moncton	A%sT	1959
+ 					-4:00	-	AST	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+Zone America/New_Brunswick/Woodstock -4:30:16	-	LMT	1883 Dec  9	# azn=2064
+		 			-5:00	-	EST	1902 Jun 15
+ 					-4:00	Canada	A%sT	1950
+		 			-4:00	Moncton	A%sT	1952
+ 					-4:00	-	AST	1953 Apr 26 2:00
+ 					-4:00	1:00	ADT	1953 Sep  8 2:00
+ 					-4:00	-	AST	1954 Apr 25 2:00
+ 					-4:00	1:00	ADT	1954 Sep  7 2:00
+ 					-4:00	-	AST	1955 May 29 2:00
+ 					-4:00	1:00	ADT	1955 Sep  5 2:00
+ 					-4:00	-	AST	1956 Jun  1 2:00
+ 					-4:00	1:00	ADT	1956 Sep  3 2:00
+ 					-4:00	-	AST	1957 Apr 28 2:00
+ 					-4:00	1:00	ADT	1957 Sep 29 2:00
+ 					-4:00	-	AST	1958 Apr 27 2:00
+ 					-4:00	1:00	ADT	1958 Sep 27 2:00
+ 					-4:00	-	AST	1959 Apr 26 2:00
+ 					-4:00	1:00	ADT	1959 Sep 27 2:00
+ 					-4:00	Canada	A%sT	1962
+					## 0	follow 	America/Moncton
+					#! -4:19:08 -	LMT	1883 Dec  9
+					#! -5:00	-	EST	1902 Jun 15
+					#! -4:00	Canada	A%sT	1933
+					#! -4:00	Moncton	A%sT	1942
+					#! -4:00	Canada	A%sT	1946
+					-4:00	Moncton	A%sT	1973
+					-4:00	Canada	A%sT	1993
+					-4:00	Moncton	A%sT	2007
+					-4:00	Canada	A%sT
+
+# Newfoundland
+#Zone America/St_Johns	-3:30:52 -	LMT	1884
+#			-3:30:52 StJohns N%sT	1918
+#			-3:30:52 Canada	N%sT	1919
+#			-3:30:52 StJohns N%sT	1935 Mar 30
+#			-3:30	StJohns	N%sT	1942 May 11
+#			-3:30	Canada	N%sT	1946
+#			-3:30	StJohns	N%sT	2011 Nov
+#			-3:30	Canada	N%sT
+
+# few towns near west border. Shanks differs after 1987 and considered wrong
+Zone America/Newfoundland/Wabush    -3:31:28	-	LMT	1884	# azn=2071
+				      -4:00	-	AST	1918
+				      -4:00	Canada	A%sT	1919
+				      -4:00	-	AST	1936
+				      -4:00	StJohns	NST	1942 May 11
+				      -4:00	Canada	N%sT	1946
+				      -4:00	StJohns	N%sT	1970 
+				      -4:00	Halifax	A%sT	1973
+				      -4:00	-	AST	1973 Apr 29 2:00
+				      -4:00	1:00	ADT	1973 Oct 28 2:00
+				      ## 0		follow  America/Halifax
+				      #! -4:14:24 -	LMT	1902 Jun 15
+				      #! -4:00	Halifax	A%sT	1918
+				      #! -4:00	Canada	A%sT	1919
+				      #! -4:00	Halifax	A%sT	1942 Feb  9  2:00s
+				      #! -4:00	Canada	A%sT	1946
+				      -4:00	Halifax	A%sT	1974
+				      -4:00	Canada	A%sT
+
+# most of Newfoundland, like St Johns but no DST
+Zone America/Newfoundland/Paradise    -3:31:28	-	LMT	1884	# azn=2073
+				      -3:30:52	-	NMT	1918
+				      -3:30:52	Canada	N%sT	1919
+				      -3:30:52	-	NST	1935 Mar 30
+				      -3:30	-	NST	1942 May 11
+				      -3:30	Canada	N%sT	1946
+				      -3:30	StJohns	N%sT	1970 
+				      ## 0		follow  America/St_Johns
+				      #! -3:30:52 -	LMT	1884
+				      #! -3:30:52 StJohns N%sT	1918
+				      #! -3:30:52 Canada	N%sT	1919
+				      #! -3:30:52 StJohns N%sT	1935 Mar 30
+				      #! -3:30	StJohns	N%sT	1942 May 11
+				      #! -3:30	Canada	N%sT	1946
+				      -3:30	StJohns	N%sT	2011 Nov
+				      -3:30	Canada	N%sT
