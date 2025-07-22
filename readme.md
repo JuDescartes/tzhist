@@ -25,6 +25,13 @@ created and maintained private databases with extended timezone history data.
 Numerous researchers have researched the time zone history of many countries
 and published their work.
 
+### tzhist mailign list and discussion group
+There is an associated discussion group for timezone history work.
+
+https://groups.google.com/g/tzdata-history
+
+Anyone can join this Google group.
+
 
 ### The current and historical information on time zones and daylight saving times comes from
 - the public domain database TZ, see <a href="https://en.wikipedia.org/wiki/Tz_database" target="new">Wikipedia TZ Database</a>, especially for data from 1970 onwards.
