@@ -25,7 +25,7 @@ created and maintained private databases with extended timezone history data.
 Numerous researchers have researched the time zone history of many countries
 and published their work.
 
-### tzhist mailign list and discussion group
+### tzhist mailing list and discussion group
 There is an associated discussion group for timezone history work.
 
 https://groups.google.com/g/tzdata-history
