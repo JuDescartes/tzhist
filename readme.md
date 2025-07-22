@@ -76,3 +76,5 @@ NH(15), NJ(15), NM(2), NY(200), OH(100), OK(3), OR(15), PA(120), RI(1), SC(1), S
 VA(25), VT(50), WA(50), WI(5), WV (1)(30), WY (1).
 
 The number in (parenthesis) indicates how many zones are approximately required for each state.
+The numbers are so high, because until the Uniform Timezone Act of 1967, in many states towns or counties could
+decide on the local level whether to follow daylight saving time in a particular year.
