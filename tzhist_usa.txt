@@ -1,0 +1,185 @@
+# Florida timezone history
+# compiled by Alois Treindl July 2025
+# published under Creative Commons license 
+# http://creativecommons.org/licenses/by/3.0/deed.en
+# Sources:
+# Doris Chase Doane, Time changes in the USA (quoted as DCD)
+# Thomas Shanks, American Atlas, various editions (quoted as Shanks)
+# Newspaper archives accessible via Internet, especially Pensacola Journal
+# and Pensacola News Journal
+# 
+# DCD writes: EST adopted east of 84w50 including River Junction, CST adopted
+# west of River Junction with exception of Apalachicola.
+# TZ northamerica writes 
+# US eastern time in most of Florida, US central time in Florida panhandle 
+# (Bay, Calhoun, Escambia, Gulf, Holmes, Jackson, Okaloosa, Santa Rosa, Walton, and
+# Washington counties),
+
+# Esacambia county westmost in FL panhandle. County capital is Pensacola, which
+# in Shanks had a different zone due to no DST in 1931. Shanks errs
+# Source: Pensacola Journal 3 Mach 1931: "Pensacola will have daylight saving time
+# from the last Sunday in April until the last Sunday in September."
+# It had no DST 1920-1941 but DST like Chicago since 1946
+# Shanks has 1947 begin DST on 4 May instead of 27 April.
+# Pensacola News Journal PNJ 4 May, p.2 confirm this, there was a vote in Pensacola.
+# The years between 1949 and 1957 are not fully confirmed, follow Shanks.
+# Shanks has 1958 end DST on 1 Sep instead of 26 Oct, confirmed by PNJ.
+# Shanks has no DST in 1966, confirmed by PNJ.
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Florida/Pensacola -05:48:52 -	LMT	1889 May 30 12u		# azn=3100
+			-6:00	US	C%sT	1931
+			-6:00	Chicago	C%sT	1932
+			-6:00	US	C%sT	1941
+			-6:00	Chicago	C%sT	1942
+			-6:00	US	C%sT	1946
+			-6:00	Chicago	C%sT	1947
+			-6:00	-	CST	1947 May 4	02:00
+			-6:00	Chicago	C%sT	1958 Sep 1	02:00
+			-6:00	-	CST	1959
+			-6:00	Chicago	C%sT	1966
+			-6:00	-	CST	1967
+			## 0	follow America/Chicago
+			#! -5:50:36 -	LMT	1883 Nov 18 18:00u
+			#! -6:00	US	C%sT	1920
+			#! -6:00	Chicago	C%sT	1936 Mar  1  2:00
+			#! -5:00	-	EST	1936 Nov 15  2:00
+			#! -6:00	Chicago	C%sT	1942
+			#! -6:00	US	C%sT	1946
+			#! -6:00	Chicago	C%sT	1967
+			-6:00	US	C%sT
+
+
+# The zone is named after the largest town in the in Florida, Jacksonville, on Eastern time
+# It covers most of Florida east of 84w50, except Broward, Dade, Palm Beach county.
+# TZ says it follow New_York, but that is largely false.
+# Jacksonville like most of Florida had no DST 1920-1941 and 1947-1966
+# Contrary to the Miami area, it had DST in 1946.
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Florida/Jacksonville -05:26:36 -	LMT	1889 May 30 12u		# azn=3101
+			-6:00	US	C%sT	1919 Jan 1  02:00
+			-5:00	US	E%sT	1946
+			-5:00	NYC	E%sT	1947
+			-5:00	US	E%sT	1967
+			## 0	follow America/New_York
+			#! -4:56:02 -	LMT	1883 Nov 18 17:00u
+			#! -5:00	US	E%sT	1920
+			#! -5:00	NYC	E%sT	1942
+			#! -5:00	US	E%sT	1946
+			#! -5:00	NYC	E%sT	1967
+			-5:00	US	E%sT
+
+# The zone is named after the second largest town in the in Florida, Miami
+# It covers Broward, Dade, Palm Beach county and brighton indian res and Sunnyland
+# TZ says it follow New_York, but that is largely false.
+# Miami like most of Florida had no DST 1920-1941 and 1946-1966
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Florida/Miami -05:20:48 -	LMT	1889 May 30 12u		# azn=3102
+			-6:00	US	C%sT	1919 Jan 1  02:00
+			-5:00	US	E%sT	1967
+			## 0	follow America/New_York
+			#! -4:56:02 -	LMT	1883 Nov 18 17:00u
+			#! -5:00	US	E%sT	1920
+			#! -5:00	NYC	E%sT	1942
+			#! -5:00	US	E%sT	1946
+			#! -5:00	NYC	E%sT	1967
+			-5:00	US	E%sT
+
+# The zone cover most of the Florida panhandle west of 84w50, ond Central time
+# The largest city in this ara is Panama City, FL.
+# It like most of Florida had no DST 1920-1941 and 1946-1966
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Florida/Panama_City -05:42:40 -	LMT	1889 May 30 12u		# azn=3103
+			-6:00	US	C%sT	1967
+			## 0	follow America/Chicago
+			#! -5:50:36 -	LMT	1883 Nov 18 18:00u
+			#! -6:00	US	C%sT	1920
+			#! -6:00	Chicago	C%sT	1936 Mar  1  2:00
+			#! -5:00	-	EST	1936 Nov 15  2:00
+			#! -6:00	Chicago	C%sT	1942
+			#! -6:00	US	C%sT	1946
+			#! -6:00	Chicago	C%sT	1967
+			-6:00	US	C%sT
+
+
+# The Eglin airforce base, 86w36, like Pensacola, except for
+# Shanks claims that no DST in 1931 and 1941
+#
+# the start date of DST differed in 1947, and the end date differed in 1955 and 1958.
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Florida/Eglin -05:46:08 -	LMT	1889 May 30 12u		# azn=3104
+			-6:00	US	C%sT	1946
+			-6:00	Chicago	C%sT	1955 Sep 25 02:00
+			-6:00	-	CST	1956
+			-6:00	Chicago	C%sT	1966
+			-6:00	-	CST	1967
+			## 0	follow America/Chicago
+			#! -5:50:36 -	LMT	1883 Nov 18 18:00u
+			#! -6:00	US	C%sT	1920
+			#! -6:00	Chicago	C%sT	1936 Mar  1  2:00
+			#! -5:00	-	EST	1936 Nov 15  2:00
+			#! -6:00	Chicago	C%sT	1942
+			#! -6:00	US	C%sT	1946
+			#! -6:00	Chicago	C%sT	1967
+			-6:00	US	C%sT
+
+
+# AZN 3105 not needed, identical to 3100
+#Zone America/Florida/Pensacola -05:48:52 -	LMT	1889 May 30 12u		# azn=3105
+
+# Texas timezone history
+# compiled by Jules Descartes September 2011
+# published under Creative Commons license 
+# http://creativecommons.org/licenses/by/3.0/deed.en
+
+# Sources:
+# Doris Chase Doane, Time changes in the USA (quoted as DCD)
+# Thomas Shanks, American Atlas, various editions (quoted as Shanks)
+# Newspaper archives accessible via Internet
+# 
+
+# visual map posted to Wikimedia
+# http://commons.wikimedia.org/wiki/File:Texas_timezones.jpg
+# 
+
+# We propose three zone files
+# For the first of them, the standard tzdata definitions are fine
+# updated 2-jul-20, added azn astro zone numbers
+# updated 2-jul-20, added azn astro zone numbers
+
+# The 'Panhandle and Plains' section of Texas has CST, but had a two year
+# period of MST between 1919 and 1921. A posting to the tzdata-history mailing
+# list provides original documents:
+# http://groups.google.com/group/tzdata-history/browse_thread/thread/5e0d0d24ba438e4c
+# In short: A US goverment decision in March 1918 announced a change in time
+# zone boundaries. The CST/MST boundary was to run through Texas roughly along
+# the meridian 100w, with a bulge to the west around the towns of Sweatwater,
+# Big Springs and San Angelo, stating 1919 Jan 1 at 02 am. The local Panhandle
+# and Plains chamber of commerce was not happy in 1919 to be in another time
+# zone than the more populated south-east of the state, and they petitioned a
+# change.
+# A US congress decision of 1921 March 4 became part of the Unit States Code
+# as section 265 and moved the Panhandle and Plain area back to CST. For the
+# effective change date we follow Shanks with 1921 Mar 7. We assume that the
+# 1919 DST was observed like in the rest of the US.
+#
+# The zone is named after the largest town in the panhandle Amarillo, 101w50.
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+#Zone America/Amarillo	-6:47:20 -	LMT	1883 Nov 18 11:12:40	# azn=4940
+Zone America/Amarillo	-6:47:20 -	LMT	1883 Nov 18 18u		# azn=4940
+			-6:00	US	C%sT	1919 Jan 1  02:00
+			-7:00	US	M%sT	1921 Mar 7  02:00
+			-6:00	US	C%sT
+
+# Far western Texas (El Paso County, Hudspeth County,
+# and Pine Springs and Nickel Creek in Culberson County)
+# has MST since 1883
+Link	America/Denver	America/El_Paso	# azn=4941
+
+# The main part of Texas has always CST. Contrary to what tzdata file
+# northamerica claims, it is not like America/Chicago, as it had not DST in
+# 1936. We name it after the most populous city Houston at 95w22
+# Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
+Zone America/Houston	-6:21:28 -	LMT	1883 Nov 18 18u	# azn=4942
+			-6:00	US	C%sT
+
+
