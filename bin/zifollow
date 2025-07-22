@@ -1,0 +1,221 @@
+#!/usr/bin/perl -COEI
+# Utility to convert TZ zone src files into .txt files
+# by expanding keyword 
+# 0 follow ZONE
+# into text from ZONE
+#
+# idea by Alois Treindl
+# implemented by Leszek Buzkowski
+#
+use strict;
+use warnings;
+
+my $MAIN_ZI = '/tz/main.zi';
+
+my @text;
+my @main_text;
+my $verbose = 0;
+my $main_zi = $MAIN_ZI;
+
+sub usage 
+{
+  print qq~
+The script replaces "0 follow" lines in a .zi file with the actual zone data.
+
+Usage: $0 [options] infile outfile
+
+Options:
+    -m  file    Path to main.zi file (default is $MAIN_ZI)
+    -v          Verbose mode
+~;
+  exit(0);  
+}
+
+# Makes a copy of a string to allow regex substitutions
+# without affecting the source variable.
+sub copystr
+{
+  return sprintf "%s", $_[0];
+}
+
+# Extracts date and time from a zone line.
+# Parameters:
+#   - a line to parse
+#   - the line number (for debugging)
+# Returns:
+#   date time string in "YYYY-MM-DD hh:mm" format
+sub parse_date
+{
+  my ($line_in, $line_num) = @_;
+  my $line = copystr($line_in);
+  # drop comments and "Zone zonename"
+  $line =~ s/\s*#.*$//;
+  $line =~ s/^Zone\s+(\S+)//;
+  # extract date and time
+  my ($p0, $tshift, $p1, $p2, $year, $month, $day, $time) = split '\s+', $line;
+  my %MON = (Jan => 1, Feb => 2, Mar => 3, Apr => 4, May => 5, Jun => 6, 
+             Jul => 7, Aug => 8, Sep => 9, Oct => 10, Nov => 11, Dec => 12);
+  $year or $year = 3000;
+  $month = $MON{$month || ''} || 1;
+  $month or die "$line_num: Invalid month name in: $line\n";
+  $day or $day = 1;
+  $day =~ /^\d+$/ or die "$line_num: Unknown day format in: $line\n";
+  $time or $time = '';
+  my $hour = 0;
+  my $min = 0;
+  if ($time =~ /^\d+:\d+$/) {
+    ($hour, $min) = split /:/, $time;
+  } elsif ($time =~ /^\d+$/) {
+    $hour = $time;
+  }
+  return sprintf "%04d-%02d-%02d %02d:%02d", $year, $month, $day, $hour, $min;
+}
+
+# Finds and returns the relevant part of the zone info to follow
+# in order to replace the corresponding "0 follow" line.
+# Parameters:
+#   - input text source (file name)
+#   - input text array ref  
+#   - zone name to follow
+#   - date and time from the line before "0 follow"
+#   - indentation whitespaces from the "0 follow" line
+#
+sub follow 
+{
+  my ($src, $textref, $zone, $date_str, $indent) = @_;
+  my @result;
+  my $zone_found = 0;
+  my $line_num = 0;
+  foreach my $l (@$textref) {
+    my $line = copystr($l);
+    $line_num++;
+    # find zone
+    if (!$zone_found && $line =~ /^Zone\s+(\S+)/ && $1 eq $zone) {
+       # drop "Zone zonename", now we just need the zone data 
+      $line =~ s/^Zone\s+\S+//;
+      $zone_found = 1;
+    }
+    # continue looking for the zone if not found yet
+    $zone_found or next;
+    # comment lines with leading whitespaces are adjusted and copied
+    if ($line =~ /^\s*(#.*)/) {
+      push @result, "$indent$1";
+      next;
+    }
+    # zone found, actual lines are skipped or copied depending on the date
+    if ($line =~ /^\s+(.*)/) {
+      my $line1 = $1;
+      $line1 =~ /^0\s+follow/ and die "Nested '0 follow' in $src:$line_num!\n";
+      my $dstr = parse_date($line, $line_num);
+      if ($date_str && $dstr le $date_str) {
+        $verbose and printf "%8d ! %s%s\n", $line_num, $indent, $line1;
+        push @result, "$indent#! $line1";
+      } else {
+        $verbose and printf "%8d   %s%s\n", $line_num, $indent, $line1;
+        push @result, "$indent$line1";
+      }
+    } else {
+      # end of zone definition => end of follow
+      last;
+    }  
+  }
+  # remove last element if starting with #
+  my $alen = scalar(@result);
+  if ($alen > 1 && $result[$alen - 1] =~ /^\s*#/) {
+    #print STDERR "$zone popped  $result[$alen - 1]\n";
+    $result[$alen - 1] = '';
+  }
+  return @result;
+}
+
+#
+# main program
+#
+my $arg = shift @ARGV;
+while ($arg && $arg =~ /^-/) {
+  if ($arg eq '-v') {
+    $verbose = 1;
+  } 
+  if ($arg eq '-m') {
+    $arg = shift @ARGV;
+    $main_zi = $arg;  
+  } 
+  $arg = shift @ARGV;
+}
+$arg or usage();
+my $in_file = $arg;
+$arg = shift @ARGV;
+$arg or usage();
+my $out_file = $arg;
+$in_file !~ /[^0-9a-zA-Z_\-\.\/]/ or die "Invalid character(s) in filename '$in_file'!\n";
+$out_file !~ /[^0-9a-zA-Z_\-\.\/]/ or die "Invalid character(s) in filename '$out_file'!\n";
+$in_file ne $out_file or die "Input and output filename should not be the same!\n";
+#
+# read main file and store in @main_text
+#
+open F, '<', $main_zi or die "Cannot open file '$main_zi'!\n";
+binmode F, ":utf8";
+while (<F>) {
+  chomp;
+  push @main_text, $_;
+}
+close F;
+#
+# read input file and store in @text
+#
+open F, '<', $in_file or die "Cannot open file '$in_file'!\n";
+binmode F, ":utf8";
+while (<F>) {
+  chomp;
+  push @text, $_;
+}
+close F;
+#
+# open output file
+#
+open G, '>', $out_file or die "Cannot open file '$out_file' for writing!\n";
+binmode G, ":utf8";
+#
+# process input data
+# 
+my $prev_line = ''; # previous line
+my $line_num = 0; # line number
+my $zone = ''; # current zone
+foreach my $l (@text) {
+  my $line = copystr($l);
+  $line_num++;
+  $line =~ /^Zone\s+(\S+)/ and $zone = $1;
+  # found a "0 follow" line?
+  if ($line =~ /^\s*0\s+follow\s+(\S+)/) {
+    my $follow_zone = $1;
+    $verbose and print "=== $zone ===\n   (...)\n";
+    $verbose and printf "%8d   %s\n", $line_num - 1, $prev_line;
+    $verbose and printf "%8d   %s\n", $line_num, $line;
+    $verbose and print "--> $follow_zone \n";
+    # output "0 follow" line commented out
+    $line =~ s/^(\s*)(0\s+follow.*)/$1## $2/;
+    print G "$line\n";
+    # extract date from the previous zone line
+    my $date_str = parse_date($prev_line, $line_num - 1);
+    # get indentation from the last line
+    my $indent = ($line =~ /^(\s+)/ ? $1 : '');
+    # get and output the follow zone data
+    my @result = follow($in_file, \@text, $follow_zone, $date_str, $indent);
+    if (!scalar(@result)) {
+      @result = follow($main_zi, \@main_text, $follow_zone, $date_str, $indent);
+      scalar(@result) or die "Follow zone '$zone' has not been found!\n";
+    }
+    foreach my $l (@result) {
+      print G "$l\n";
+    }
+  } else {
+    # simply output the line
+    print G "$line\n";
+  }
+  # save the previous line
+  $prev_line = copystr($l);
+}
+#
+# close output file
+#
+close G;
