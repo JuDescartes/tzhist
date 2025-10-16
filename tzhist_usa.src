@@ -1,3 +1,22 @@
+# additions to US timezine history
+# compiled by Alois Treindl and assistants
+
+# general US dst rules, from tzdata/nothamerica, copied here for easy reference
+# Rule	NAME	FROM	TO	-	IN	ON	AT	SAVE	LETTER/S
+# Rule	US	1918	1919	-	Mar	lastSun	2:00	1:00	D
+# Rule	US	1918	1919	-	Oct	lastSun	2:00	0	S
+# Rule	US	1942	only	-	Feb	9	2:00	1:00	W # War
+# Rule	US	1945	only	-	Aug	14	23:00u	1:00	P # Peace
+# Rule	US	1945	only	-	Sep	30	2:00	0	S
+# Rule	US	1967	2006	-	Oct	lastSun	2:00	0	S
+# Rule	US	1967	1973	-	Apr	lastSun	2:00	1:00	D
+# Rule	US	1974	only	-	Jan	6	2:00	1:00	D
+# Rule	US	1975	only	-	Feb	lastSun	2:00	1:00	D
+# Rule	US	1976	1986	-	Apr	lastSun	2:00	1:00	D
+# Rule	US	1987	2006	-	Apr	Sun>=1	2:00	1:00	D
+# Rule	US	2007	max	-	Mar	Sun>=8	2:00	1:00	D
+# Rule	US	2007	max	-	Nov	Sun>=1	2:00	0	S
+
 # Florida timezone history
 # compiled by Alois Treindl July 2025
 # published under Creative Commons license 
@@ -140,7 +159,8 @@ Link	America/Denver	America/El_Paso	# azn=4941
 
 # The main part of Texas has always CST. Contrary to what tzdata file
 # northamerica claims, it is not like America/Chicago, as it had not DST in
-# 1936. We name it after the most populous city Houston at 95w22
+# 1936, or between 1946 and 1966.
+# We name it after the most populous city Houston at 95w22
 # Zone	NAME		GMTOFF	RULES	FORMAT	[UNTIL]
 Zone America/Houston	-6:21:28 -	LMT	1883 Nov 18 18u	# azn=4942
 			-6:00	US	C%sT
