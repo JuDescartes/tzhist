@@ -2241,28 +2241,6 @@ Link	Asia/Ankara	Europe/Ankara	# consider Turkey as part of Europe, so its capit
 #			2:00	Ukraine	EE%sT	1996 May 13
 #			2:00	EU	EE%sT
 #
-#Zone Europe/Uzhgorod	1:29:12 -	LMT	1890 Oct		# azn=395
-#			1:00	-	CET	1940
-#			1:00	C-Eur	CE%sT	1944 Oct
-#			1:00	1:00	CEST	1944 Oct 26
-#			1:00	-	CET	1945 Jun 29
-#			3:00	Russia	MSK/MSD	1990
-#			3:00	-	MSK	1990 Jul  1  2:00
-#			1:00	-	CET	1991 Mar 31  3:00
-#			2:00	-	EET	1992 Mar 20
-#			2:00	Ukraine	EE%sT	1996 May 13
-#			2:00	EU	EE%sT
-#
-#Zone Europe/Zaporozhye	2:20:40 -	LMT	1880			# azn=411
-#			2:20	-	+0220	1924 May  2
-#			2:00	-	EET	1930 Jun 21
-#			3:00	-	MSK	1941 Aug 25
-#			1:00	C-Eur	CE%sT	1943 Oct 25
-#			3:00	Russia	MSK/MSD	1991 Mar 31  2:00
-#			2:00	E-Eur	EE%sT	1992 Mar 20
-#			2:00	Ukraine	EE%sT	1996 May 13
-#			2:00	EU	EE%sT
-#
 #Zone Europe/Simferopol	 2:16:24 -	LMT	1880			# azn=402
 #			 2:16	-	SMT	1924 May  2 # Simferopol Mean T
 #			 2:00	-	EET	1930 Jun 21
@@ -2271,6 +2249,42 @@ Link	Asia/Ankara	Europe/Ankara	# consider Turkey as part of Europe, so its capit
 #			 3:00	Russia	MSK/MSD	1990
 #			 3:00	-	MSK	1990 Jul  1  2:00
 #			 2:00	-	EET	1992 Mar 20
+
+# tzdata dropped Europe/Uzhgorod and Europe/Zaporozhye
+Zone Europe/Uzhgorod	1:29:12 -	LMT	1890 Oct		# azn=395
+			1:00	-	CET	1940
+			1:00	C-Eur	CE%sT	1944 Oct
+			1:00	1:00	CEST	1944 Oct 26
+			1:00	-	CET	1945 Jun 29
+			3:00	Russia	MSK/MSD	1990
+			## 0	follow	Europe/Kyiv
+			#! 2:02:04 -	LMT	1880
+			#! 2:02:04	-	KMT	1924 May  2 # Kyiv Mean Time
+			#! 2:00	-	EET	1930 Jun 21
+			#! 3:00	-	MSK	1941 Sep 20
+			#! 1:00	C-Eur	CE%sT	1943 Nov  6
+			3:00	Russia	MSK/MSD	1990 Jul  1  2:00
+			2:00	1:00	EEST	1991 Sep 29  3:00
+			2:00	C-Eur	EE%sT	1996 May 13
+			2:00	EU	EE%sT
+
+Zone Europe/Zaporozhye	2:20:40 -	LMT	1880			# azn=411
+			2:20	-	+0220	1924 May  2
+			2:00	-	EET	1930 Jun 21
+			3:00	-	MSK	1941 Aug 25
+			1:00	C-Eur	CE%sT	1943 Oct 25
+			3:00	Russia	MSK/MSD	1990
+			## 0	follow	Europe/Kyiv
+			#! 2:02:04 -	LMT	1880
+			#! 2:02:04	-	KMT	1924 May  2 # Kyiv Mean Time
+			#! 2:00	-	EET	1930 Jun 21
+			#! 3:00	-	MSK	1941 Sep 20
+			#! 1:00	C-Eur	CE%sT	1943 Nov  6
+			3:00	Russia	MSK/MSD	1990 Jul  1  2:00
+			2:00	1:00	EEST	1991 Sep 29  3:00
+			2:00	C-Eur	EE%sT	1996 May 13
+			2:00	EU	EE%sT
+
 
 # Donetsk and western Luhansk oblast, largest city Mariupol w. population 480k
 # Between 1948 and 1989, the city was known as Zhdanov.
@@ -2338,7 +2352,7 @@ Zone Europe/Ukraine/Novovolynsk	1:36:36 -	LMT	1880			# azn=393
 # Was part of Galizia in the Austrian empire until 1918, then part of Poland.
 # Occupied by Russia in 1939 and made part of Ukraine on 4 Dec 1939.
 # Occupied by Germany on 22 June 1941 until 27 July 1944.
-Zone Europe/Ukraine/Lviv	1:36	-	LMT	1890 Oct 			# azn=394
+Zone Europe/Ukraine/Lviv	1:36:01	-	LMT	1890 Oct			# azn=394
 				1:00	-	CET	1918 Nov 21	
 				2:00	Poland	EE%sT	1922 Jun 
 				1:00	Poland	CE%sT	1939 Dec 4
@@ -2368,16 +2382,14 @@ Zone Europe/Ukraine/Ivano-Frankivsk 1:38:48 -	LMT	1880 				# azn=396
 				3:00	-	MSK	1941 Jul 2
 				1:00	C-Eur	CE%sT	1944 Jul 27
 				3:00	Russia	MSK/MSD	1946
-				## 0	follow	Europe/Uzhgorod
-				#! 1:29:12 -	LMT	1890 Oct
-				#! 1:00	-	CET	1940
-				#! 1:00	C-Eur	CE%sT	1944 Oct
-				#! 1:00	1:00	CEST	1944 Oct 26
-				#! 1:00	-	CET	1945 Jun 29
-				3:00	Russia	MSK/MSD	1990
-				3:00	-	MSK	1990 Jul  1  2:00
-				1:00	-	CET	1991 Mar 31  3:00
-				2:00	-	EET	1992 Mar 20
+				## 0	follow	Europe/Kyiv
+				#! 2:02:04 -	LMT	1880
+				#! 2:02:04	-	KMT	1924 May  2 # Kyiv Mean Time
+				#! 2:00	-	EET	1930 Jun 21
+				#! 3:00	-	MSK	1941 Sep 20
+				#! 1:00	C-Eur	CE%sT	1943 Nov  6
+				3:00	Russia	MSK/MSD	1990 Jul  1  2:00
+				2:00	1:00	EEST	1991 Sep 29  3:00
 				2:00	C-Eur	EE%sT	1996 May 13
 				2:00	EU	EE%sT
 
@@ -2391,16 +2403,14 @@ Zone Europe/Ukraine/Dubove	1:35:32 -	LMT	1890 Oct 			# azn=397
 				3:00	-	MSK	1941 Jun 30
 				1:00	C-Eur	CE%sT	1944 Jul 27
 				3:00	Russia	MSK/MSD	1946
-				## 0	follow	Europe/Uzhgorod
-				#! 1:29:12 -	LMT	1890 Oct
-				#! 1:00	-	CET	1940
-				#! 1:00	C-Eur	CE%sT	1944 Oct
-				#! 1:00	1:00	CEST	1944 Oct 26
-				#! 1:00	-	CET	1945 Jun 29
-				3:00	Russia	MSK/MSD	1990
-				3:00	-	MSK	1990 Jul  1  2:00
-				1:00	-	CET	1991 Mar 31  3:00
-				2:00	-	EET	1992 Mar 20
+				## 0	follow	Europe/Kyiv
+				#! 2:02:04 -	LMT	1880
+				#! 2:02:04	-	KMT	1924 May  2 # Kyiv Mean Time
+				#! 2:00	-	EET	1930 Jun 21
+				#! 3:00	-	MSK	1941 Sep 20
+				#! 1:00	C-Eur	CE%sT	1943 Nov  6
+				3:00	Russia	MSK/MSD	1990 Jul  1  2:00
+				2:00	1:00	EEST	1991 Sep 29  3:00
 				2:00	C-Eur	EE%sT	1996 May 13
 				2:00	EU	EE%sT
 
@@ -2754,7 +2764,8 @@ Zone Africa/Morocco/Tanger  -0:23	-	LMT	1913 Oct 26		# azn=1075
 			       0:00	Morocco	%z	1984 Mar 16
 			       1:00	-	%z	1986
 			       0:00	Morocco	%z	2018 Oct 28  3:00
-			       1:00	Morocco	%z
+			       1:00	Morocco	%z	2026 Sep 20  2:00
+			       0:00	-	%z
 	
 # area on west coast of Morocco kept by Spain after Morocco independence of 1956.
 # Time like Western Sahara Africa/El_Aaiun until 1967.
@@ -2767,7 +2778,8 @@ Zone Africa/Morocco/Sidi_Ifni -0:40:48	-	LMT	1913 Oct 26		# azn=1078
 			       0:00	Morocco	%z	1984 Mar 16
 			       1:00	-	%z	1986
 			       0:00	Morocco	%z	2018 Oct 28  3:00
-			       1:00	Morocco	%z
+			       1:00	Morocco	%z	2026 Sep 20  2:00
+			       0:00	-	%z
 
 
 # Niger
@@ -3831,9 +3843,7 @@ Zone America/Mexico/Ensenada	 -7:46:28    -	LMT	1921 Dec 31 23:54:20	# azn=1732
 				    	#! -8:00	1:00	PDT	1951 Sep 30  2:00
 				    	#! -8:00	-	PST	1952 Apr 27  2:00
 				    	#! -8:00	1:00	PDT	1952 Sep 28  2:00
-				    	#! -8:00	-	PST	1954
-				    	#! -8:00	CA	P%sT	1961
-				    	#! -8:00	-	PST	1976
+				    	#! -8:00	CA	P%sT	1967
 				    	-8:00	US	P%sT	1996
 				    	-8:00	Mexico	P%sT	2001
 				    	-8:00	US	P%sT	2002 Feb 20

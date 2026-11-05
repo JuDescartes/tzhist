@@ -3,6 +3,7 @@
 #########################
 # details from Chase Doane and Shanks, checked to some extent via newspaper archive
 # research. 
+# Updated 4-nov-2026
 
 # Alberta
 
@@ -43,6 +44,7 @@ Zone America/Alberta/Lloydminster -07:20 -      LMT     1906 Sep	# azn=2004
 # British Columbia
 
 # Vancouver island, south end around Victoria
+# udpated 4-nov-26
 Zone America/British_Columbia/Victoria	-8:13:28 -	LMT	1884	# azn=2011
 			-8:00	Vanc	P%sT	1921 May
 			-8:00	1:00	PDT	1921 Oct
@@ -51,14 +53,15 @@ Zone America/British_Columbia/Victoria	-8:13:28 -	LMT	1884	# azn=2011
 			-8:00	-	PST	1923 May 6
 			-8:00	1:00	PDT	1923 Sep 9
 			-8:00	Vanc	P%sT	1987
-			-8:00	Canada	P%sT
+			0	follow America/Vancouver
 
 # main part of state, Abbotsford is largest town outside Vancouver area
+# udpated 4-nov-26
 Zone America/British_Columbia/Abbotsford -8:09:08 -	LMT	1884	# azn=2012
 			-8:00	Vanc	P%sT	1946 
 			-8:00	-	PST	1947 	# no DST in 1946
 			-8:00	Vanc	P%sT	1987
-			-8:00	Canada	P%sT
+			0	follow America/Vancouver
 
 # East Kootenay region near Alberta border, same as Alberta/Red_Deer	# azn=2013
 # do not create an extra zone for it. Largest town Cranbrook.

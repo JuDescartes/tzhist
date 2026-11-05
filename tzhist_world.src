@@ -1,6 +1,6 @@
 # tzhist_world
 # collected tzhistory updates for the world except Canada and USA
-# last edited 15-mar-22
+# last edited 5-nov-26
 #
 # This information is in the public domain
 # 
@@ -1297,28 +1297,6 @@ Link	Asia/Ankara	Europe/Ankara	# consider Turkey as part of Europe, so its capit
 #			2:00	Ukraine	EE%sT	1996 May 13
 #			2:00	EU	EE%sT
 #
-#Zone Europe/Uzhgorod	1:29:12 -	LMT	1890 Oct		# azn=395
-#			1:00	-	CET	1940
-#			1:00	C-Eur	CE%sT	1944 Oct
-#			1:00	1:00	CEST	1944 Oct 26
-#			1:00	-	CET	1945 Jun 29
-#			3:00	Russia	MSK/MSD	1990
-#			3:00	-	MSK	1990 Jul  1  2:00
-#			1:00	-	CET	1991 Mar 31  3:00
-#			2:00	-	EET	1992 Mar 20
-#			2:00	Ukraine	EE%sT	1996 May 13
-#			2:00	EU	EE%sT
-#
-#Zone Europe/Zaporozhye	2:20:40 -	LMT	1880			# azn=411
-#			2:20	-	+0220	1924 May  2
-#			2:00	-	EET	1930 Jun 21
-#			3:00	-	MSK	1941 Aug 25
-#			1:00	C-Eur	CE%sT	1943 Oct 25
-#			3:00	Russia	MSK/MSD	1991 Mar 31  2:00
-#			2:00	E-Eur	EE%sT	1992 Mar 20
-#			2:00	Ukraine	EE%sT	1996 May 13
-#			2:00	EU	EE%sT
-#
 #Zone Europe/Simferopol	 2:16:24 -	LMT	1880			# azn=402
 #			 2:16	-	SMT	1924 May  2 # Simferopol Mean T
 #			 2:00	-	EET	1930 Jun 21
@@ -1327,6 +1305,25 @@ Link	Asia/Ankara	Europe/Ankara	# consider Turkey as part of Europe, so its capit
 #			 3:00	Russia	MSK/MSD	1990
 #			 3:00	-	MSK	1990 Jul  1  2:00
 #			 2:00	-	EET	1992 Mar 20
+
+# tzdata dropped Europe/Uzhgorod and Europe/Zaporozhye, first by moving them to backzone
+# we keep them here for their pre-1970 history
+Zone Europe/Uzhgorod	1:29:12 -	LMT	1890 Oct		# azn=395
+			1:00	-	CET	1940
+			1:00	C-Eur	CE%sT	1944 Oct
+			1:00	1:00	CEST	1944 Oct 26
+			1:00	-	CET	1945 Jun 29
+			3:00	Russia	MSK/MSD	1990
+			0	follow	Europe/Kyiv
+
+Zone Europe/Zaporozhye	2:20:40 -	LMT	1880			# azn=411
+			2:20	-	+0220	1924 May  2
+			2:00	-	EET	1930 Jun 21
+			3:00	-	MSK	1941 Aug 25
+			1:00	C-Eur	CE%sT	1943 Oct 25
+			3:00	Russia	MSK/MSD	1990
+			0	follow	Europe/Kyiv
+
 
 # Donetsk and western Luhansk oblast, largest city Mariupol w. population 480k
 # Between 1948 and 1989, the city was known as Zhdanov.
@@ -1367,7 +1364,7 @@ Zone Europe/Ukraine/Novovolynsk	1:36:36 -	LMT	1880			# azn=393
 # Was part of Galizia in the Austrian empire until 1918, then part of Poland.
 # Occupied by Russia in 1939 and made part of Ukraine on 4 Dec 1939.
 # Occupied by Germany on 22 June 1941 until 27 July 1944.
-Zone Europe/Ukraine/Lviv	1:36	-	LMT	1890 Oct 			# azn=394
+Zone Europe/Ukraine/Lviv	1:36:01	-	LMT	1890 Oct			# azn=394
 				1:00	-	CET	1918 Nov 21	
 				2:00	Poland	EE%sT	1922 Jun 
 				1:00	Poland	CE%sT	1939 Dec 4
@@ -1388,7 +1385,7 @@ Zone Europe/Ukraine/Ivano-Frankivsk 1:38:48 -	LMT	1880 				# azn=396
 				3:00	-	MSK	1941 Jul 2
 				1:00	C-Eur	CE%sT	1944 Jul 27
 				3:00	Russia	MSK/MSD	1946
-				0	follow	Europe/Uzhgorod
+				0	follow	Europe/Kyiv
 
 # northeast area of Zakarpattia Oblast , largest town Dubove pupulation 9k.
 # The area belonged to Galizia under Austrian rule until 1918.
@@ -1400,7 +1397,7 @@ Zone Europe/Ukraine/Dubove	1:35:32 -	LMT	1890 Oct 			# azn=397
 				3:00	-	MSK	1941 Jun 30
 				1:00	C-Eur	CE%sT	1944 Jul 27
 				3:00	Russia	MSK/MSD	1946
-				0	follow	Europe/Uzhgorod
+				0	follow	Europe/Kyiv
 
 # Chernivtsi Oblast is an oblast (province) in Western
 # Ukraine, consisting of the northern parts of the regions of Bukovina, the Hertsa area and

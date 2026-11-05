@@ -3,6 +3,7 @@
 #########################
 # details from Chase Doane and Shanks, checked to some extent via newspaper archive
 # research. 
+# Updated 4-nov-2026
 
 # Alberta
 
@@ -16,7 +17,11 @@ Zone America/Alberta/Red_Deer   -07:35:12 -	LMT     1906 Sep	# azn=2001
 				  ## 0	follow America/Edmonton
 				  #! -7:33:52 -	LMT	1906 Sep
 				  -7:00	Edm	M%sT	1987
-				  -7:00	Canada	M%sT
+				  -7:00	Canada	M%sT	2026 Jun 18
+				  # Temporary hack; see above.
+				  -7:00	Canada	MDT	2026 Nov  1  2:00
+				  # End of temporary hack.
+				  -6:00	-	CST
 
 # small area around Calgary
 Zone America/Alberta/Calgary   -07:36:20 -      LMT     1906 Sep	# azn=2002
@@ -27,7 +32,11 @@ Zone America/Alberta/Calgary   -07:36:20 -      LMT     1906 Sep	# azn=2002
 				## 0	follow America/Edmonton
 				#! -7:33:52 -	LMT	1906 Sep
 				-7:00	Edm	M%sT	1987
-				-7:00	Canada	M%sT
+				-7:00	Canada	M%sT	2026 Jun 18
+				# Temporary hack; see above.
+				-7:00	Canada	MDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-6:00	-	CST
 
 # small area in south-east
 Zone America/Alberta/Medicine_Hat -07:22:40 -	LMT     1906 Sep	# azn=2003
@@ -36,7 +45,11 @@ Zone America/Alberta/Medicine_Hat -07:22:40 -	LMT     1906 Sep	# azn=2003
 				## 0	follow America/Edmonton
 				#! -7:33:52 -	LMT	1906 Sep
 				-7:00	Edm	M%sT	1987
-				-7:00	Canada	M%sT
+				-7:00	Canada	M%sT	2026 Jun 18
+				# Temporary hack; see above.
+				-7:00	Canada	MDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-6:00	-	CST
 
 # town at border of Saskatchewan, incorporated in both states
 Zone America/Alberta/Lloydminster -07:20 -      LMT     1906 Sep	# azn=2004
@@ -50,11 +63,16 @@ Zone America/Alberta/Lloydminster -07:20 -      LMT     1906 Sep	# azn=2004
 				## 0	follow America/Edmonton
 				#! -7:33:52 -	LMT	1906 Sep
 				-7:00	Edm	M%sT	1987
-				-7:00	Canada	M%sT
+				-7:00	Canada	M%sT	2026 Jun 18
+				# Temporary hack; see above.
+				-7:00	Canada	MDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-6:00	-	CST
 
 # British Columbia
 
 # Vancouver island, south end around Victoria
+# udpated 4-nov-26
 Zone America/British_Columbia/Victoria	-8:13:28 -	LMT	1884	# azn=2011
 			-8:00	Vanc	P%sT	1921 May
 			-8:00	1:00	PDT	1921 Oct
@@ -63,14 +81,29 @@ Zone America/British_Columbia/Victoria	-8:13:28 -	LMT	1884	# azn=2011
 			-8:00	-	PST	1923 May 6
 			-8:00	1:00	PDT	1923 Sep 9
 			-8:00	Vanc	P%sT	1987
-			-8:00	Canada	P%sT
+			## 0	follow America/Vancouver
+			#! -8:12:28 -	LMT	1884
+			#! -8:00	Vanc	P%sT	1987
+			-8:00	Canada	P%sT	2026 Mar  9
+			# Temporary hack; see above.
+			-8:00	Canada	PDT	2026 Nov  1  2:00
+			# End of temporary hack.
+			-7:00	-	MST
 
 # main part of state, Abbotsford is largest town outside Vancouver area
+# udpated 4-nov-26
 Zone America/British_Columbia/Abbotsford -8:09:08 -	LMT	1884	# azn=2012
 			-8:00	Vanc	P%sT	1946 
 			-8:00	-	PST	1947 	# no DST in 1946
 			-8:00	Vanc	P%sT	1987
-			-8:00	Canada	P%sT
+			## 0	follow America/Vancouver
+			#! -8:12:28 -	LMT	1884
+			#! -8:00	Vanc	P%sT	1987
+			-8:00	Canada	P%sT	2026 Mar  9
+			# Temporary hack; see above.
+			-8:00	Canada	PDT	2026 Nov  1  2:00
+			# End of temporary hack.
+			-7:00	-	MST
 
 # East Kootenay region near Alberta border, same as Alberta/Red_Deer	# azn=2013
 # do not create an extra zone for it. Largest town Cranbrook.
@@ -94,7 +127,11 @@ Zone America/Manitoba/Steinbach	-6:26:44 -	LMT	1887 Jul 16	# azn=2031
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # town 46 km east of Winnipeg
 Zone America/Manitoba/Beausejour -6:26:12 -	LMT	1887 Jul 16	# azn=2032
@@ -111,7 +148,11 @@ Zone America/Manitoba/Beausejour -6:26:12 -	LMT	1887 Jul 16	# azn=2032
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # town near US border
 Zone America/Manitoba/Boissevain -6:40:12 -	LMT	1887 Jul 16	# azn=2033
@@ -127,7 +168,11 @@ Zone America/Manitoba/Boissevain -6:40:12 -	LMT	1887 Jul 16	# azn=2033
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # second largest town of Manitoba, 214 km west of Winnipeg
 Zone America/Manitoba/Brandon -6:39:48 -	LMT	1887 Jul 16	# azn=2034
@@ -146,7 +191,11 @@ Zone America/Manitoba/Brandon -6:39:48 -	LMT	1887 Jul 16	# azn=2034
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # 
 Zone America/Manitoba/Dauphin -6:40:12 -	LMT	1887 Jul 16	# azn=2035
@@ -162,7 +211,11 @@ Zone America/Manitoba/Dauphin -6:40:12 -	LMT	1887 Jul 16	# azn=2035
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # town pair Flin Flon, MB and Creighton, SK on north west border
 Zone America/Manitoba/Flin_Flon -6:47:32 -	LMT	1887 Jul 16	# azn=2036
@@ -181,7 +234,11 @@ Zone America/Manitoba/Flin_Flon -6:47:32 -	LMT	1887 Jul 16	# azn=2036
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # town Gimli
 Zone America/Manitoba/Gimli    -6:27:56 -	LMT	1887 Jul 16	# azn=2037
@@ -199,7 +256,11 @@ Zone America/Manitoba/Gimli    -6:27:56 -	LMT	1887 Jul 16	# azn=2037
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # towns Grand beach, Victoria Beach
 Zone America/Manitoba/Grand_Beach -6:26:40 -	LMT	1887 Jul 16	# azn=2038
@@ -215,7 +276,11 @@ Zone America/Manitoba/Grand_Beach -6:26:40 -	LMT	1887 Jul 16	# azn=2038
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # towns Pinawa, Great Falls
 Zone America/Manitoba/Pinawa -6:23:32 -	LMT	1887 Jul 16	# azn=2039
@@ -231,7 +296,11 @@ Zone America/Manitoba/Pinawa -6:23:32 -	LMT	1887 Jul 16	# azn=2039
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 
 # 
@@ -255,7 +324,11 @@ Zone America/Manitoba/Portage_la_Praerie -6:33:12 -	LMT	1887 Jul 16	# azn=2040
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # 
 Zone America/Manitoba/Rennie -6:22:12 -	LMT	1887 Jul 16	# azn=2041
@@ -271,7 +344,11 @@ Zone America/Manitoba/Rennie -6:22:12 -	LMT	1887 Jul 16	# azn=2041
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # 
 Zone America/Manitoba/Warren	-6:30:12 -	LMT	1887 Jul 16	# azn=2042
@@ -285,7 +362,11 @@ Zone America/Manitoba/Warren	-6:30:12 -	LMT	1887 Jul 16	# azn=2042
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # 
 Zone America/Manitoba/Winnipeg_Beach -6:27:52 -	LMT	1887 Jul 16	# azn=2043
@@ -302,7 +383,11 @@ Zone America/Manitoba/Winnipeg_Beach -6:27:52 -	LMT	1887 Jul 16	# azn=2043
 				## 0	follow	America/Winnipeg
 				#! -6:28:36 -	LMT	1887 Jul 16
 				-6:00	Winn	C%sT	2006
-				-6:00	Canada	C%sT
+				-6:00	Canada	C%sT	2026 Oct 31
+				# Temporary hack; see above.
+				-6:00	Canada	CDT	2026 Nov  1  2:00
+				# End of temporary hack.
+				-5:00	-	EST
 
 # state New Brunswick
 # 
