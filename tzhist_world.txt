@@ -1,6 +1,6 @@
 # tzhist_world
 # collected tzhistory updates for the world except Canada and USA
-# last edited 15-mar-22
+# last edited 5-nov-26
 #
 # This information is in the public domain
 # 
@@ -2250,7 +2250,9 @@ Link	Asia/Ankara	Europe/Ankara	# consider Turkey as part of Europe, so its capit
 #			 3:00	-	MSK	1990 Jul  1  2:00
 #			 2:00	-	EET	1992 Mar 20
 
-# tzdata dropped Europe/Uzhgorod and Europe/Zaporozhye
+# tzdata dropped Europe/Uzhgorod and Europe/Zaporozhye, first by moving them to backzone
+# we keep them here for their pre-1970 history
+# In accordance with tzdata, we no longer support 1990-1192 diffs to Europe/Kyiv
 Zone Europe/Uzhgorod	1:29:12 -	LMT	1890 Oct		# azn=395
 			1:00	-	CET	1940
 			1:00	C-Eur	CE%sT	1944 Oct
